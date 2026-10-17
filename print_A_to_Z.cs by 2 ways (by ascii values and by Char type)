@@ -1,0 +1,21 @@
+//print ABCD....Z
+static void Main_By_Char(string[] args) 
+{
+    char ch = 'A';
+    while(ch <= 'Z')
+    {
+        Console.WriteLine(ch);
+        ch++;
+    }
+}
+
+//print A to Z
+static void Main_print_A_to_Z_by_AsciiValues(string[] args)
+{
+    int start = 65, end = 90;
+    while(start <= end)
+    {
+        Console.WriteLine((char)start);
+        start++;
+    }
+}
