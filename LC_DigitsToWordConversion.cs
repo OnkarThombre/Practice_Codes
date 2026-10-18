@@ -29,25 +29,27 @@ namespace Assignment
                 count += 1;
                 temp /= 10;
             }
-            if(temp == 0)
+
+            if (num == 0)
             {
                 Console.WriteLine($"{num} is :- Zero");
             }
 
-            if (count == 3) // for hundread level
+            else if (count == 3) // for hundread level
             {
                 CountThree(ref ans, num);
             }
 
-            if (count == 2) // for ten level
+            else if (count == 2) // for ten level
             {
                 CountTwo(ref ans, num);
             }
 
-            if(count == 1)
+            else if (count == 1)
             {
-                CountOne(ref ans , num);
+                CountOne(ref ans, num);
             }
+
             Console.WriteLine($"{num} is :- {ans}");
         }
         private static void CountOne(ref string ans, int unitdigit)
